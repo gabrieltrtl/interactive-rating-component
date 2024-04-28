@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #131518;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Overpass", sans-serif;
+}
+
+.container {
+  background-image: radial-gradient(#232A34, #181E27);
+  padding: 24px 22px 32px 24px;
+  border-radius: 15px;
+  max-width: 20.4375rem;
+}
+@media (min-width: 75rem) {
+  .container {
+    max-width: 25.75rem;
+    padding: 48px 39px 32px 32px;
+  }
+}
+
+.feedback__img-wrapper {
+  display: inline-block;
+  background-color: #262E38;
+  padding: 13.33px;
+  border-radius: 50%;
+  max-width: 40px;
+  aspect-ratio: 1;
+  margin-bottom: 16px;
+}
+@media (min-width: 75rem) {
+  .feedback__img-wrapper {
+    max-width: 48px;
+    padding: 16px;
+    margin-bottom: 30px;
+  }
+}
+
+.feedback__title {
+  font-size: 24px;
+  margin-bottom: 17px;
+}
+@media (min-width: 75rem) {
+  .feedback__title {
+    margin-bottom: 15px;
+    font-size: 28px;
+  }
+}
+
+.feedback__text {
+  font-size: 14px;
+  margin-bottom: 24px;
+  line-height: 1.5;
+  color: #969FAD;
+}
+@media (min-width: 75rem) {
+  .feedback__text {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+}
+
+.feedback__list {
+  display: flex;
+  gap: 18px;
+  color: #7C8798;
+  margin-bottom: 24px;
+  justify-content: space-between;
+}
+
+.list__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  padding: 9px 18px;
+  aspect-ratio: 1;
+  max-width: 42px;
+  background-color: #262E38;
+}
+@media (min-width: 75rem) {
+  .list__item {
+    max-width: 51px;
+    padding: 14px 22px;
+  }
+}
+.list__item span {
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 700;
+}
+@media (min-width: 75rem) {
+  .list__item span {
+    font-size: 15px;
+  }
+}
+
+.feedback__btn {
+  display: block;
+  background-color: #FC7614;
+  color: #FFFFFF;
+  padding: 13.5px 113px;
+  border: none;
+  border-radius: 22px;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0 auto;
+}
+@media (min-width: 75rem) {
+  .feedback__btn:hover {
+    background-color: #FFFFFF;
+    color: #FC7614;
+    cursor: pointer;
+  }
+}
+
+.thanks {
+  display: none;
+}/*# sourceMappingURL=style.css.map */

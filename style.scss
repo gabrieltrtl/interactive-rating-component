@@ -1,0 +1,143 @@
+// Imports
+@import 'utilities';
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+
+// CSS RESET
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+// Project Start
+
+body {
+  min-height: 100vh;
+  background-color: $color2;
+  color: $color1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Overpass", sans-serif;
+}
+
+.container {
+  background-image: radial-gradient(#232A34, #181E27);
+  padding: 24px 22px 32px 24px;
+  border-radius: 15px;
+  max-width: 20.4375rem;
+  @include device(desktop) {
+    max-width: 25.75rem;
+    padding: 48px 39px 32px 32px;
+  }
+}
+
+
+.feedback__img-wrapper {
+  display: inline-block;
+  background-color: $color3;
+  padding: 13.33px;
+  border-radius: 50%;
+  max-width: 40px;
+  aspect-ratio: 1;
+  margin-bottom: 16px;
+  @include device(desktop) {
+    max-width: 48px;
+    padding: 16px;
+    margin-bottom: 30px;
+  }
+}
+
+.feedback__title {
+  font-size: map-get($fonts, "$medium");
+  margin-bottom: 17px;
+  @include device(desktop) {
+    margin-bottom: 15px;
+    font-size: map-get($fonts, "$large");
+  }
+}
+
+.feedback__text {
+  font-size: map-get($fonts, "$xsmall");
+  margin-bottom: 24px;
+  line-height: 1.5;
+  color: $color5;
+  @include device(desktop) {
+    font-size: map-get($fonts, "$small");
+    line-height: 1.6;
+  }
+}
+
+.feedback__list {
+  display: flex;
+  gap: 18px;
+  color: $color4;
+  margin-bottom: 24px;
+  justify-content: space-between;
+}
+
+.list__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  padding: 9px 18px;
+  aspect-ratio: 1;
+  max-width: 42px;
+  background-color: $color3;
+  @include device(desktop) {
+    max-width: 51px;
+    padding: 14px 22px;
+  }
+  span {
+    font-size: map-get($fonts, "$xsmall");
+    line-height: 1.5;
+    font-weight: 700;
+    @include device(desktop) {
+    font-size: map-get($fonts, "$small");
+    }
+  }
+}
+
+.feedback__btn {
+  display: block;
+  background-color: $color6;
+  color: $color1;
+  padding: 13.5px 113px;
+  border: none;
+  border-radius: 22px;
+  font-size: map-get($fonts, "$xsmall");
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0 auto;
+  @include device(desktop) {
+    &:hover {
+    background-color: $color1;
+    color: $color6;
+    cursor: pointer;
+    }
+  }
+}
+
+.thanks {
+  display: none;
+}
