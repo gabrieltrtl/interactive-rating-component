@@ -145,4 +145,12 @@ input[type=radio]:checked + .radio__label {
 
 .thanks {
   display: none;
+}
+
+.hide {
+  display: none;
+}
+
+.reveal {
+  display: block;
 }/*# sourceMappingURL=style.css.map */
