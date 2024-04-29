@@ -64,6 +64,10 @@ body {
   }
 }
 
+fieldset {
+  border: none;
+}
+
 .feedback__title {
   font-size: 24px;
   margin-bottom: 17px;
@@ -89,7 +93,7 @@ body {
 }
 
 input[type=radio] {
-  display: none;
+  opacity: 0;
 }
 
 input[type=radio]:checked + .radio__label {

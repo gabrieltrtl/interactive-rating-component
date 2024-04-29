@@ -29,7 +29,7 @@ function changeContent(event) {
     const selectedValue = captureText(event);
 
     feedbackMessage.textContent = `You selected ${selectedValue} out of 5`;
-    feedbackMessage.style.display = "block"
+    feedbackMessage.style.display = "block" 
   } else {
     if (firstButtonClick) { // Checks if it is the first click on the button.
       window.alert("Please choose an option")
