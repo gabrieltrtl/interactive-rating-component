@@ -1,34 +1,54 @@
-// Select Elements
-const option = document.querySelectorAll(".radio__label");
-const formBtn = document.querySelector(".feedback__btn")
+// Select Elements // 
+const option = document.querySelectorAll('input[type="radio"]');
+const form = document.querySelector(".feedback__form")
+const feedbackMessage = document.querySelector(".thanks__subtitle")
 
+// Declare Variables
+let optionSelected = false;
+let firstButtonClick = true;
 
-// Capture chosen option
+// Capture Chosen Option
 function captureText(event) {
-  console.log(event.target.innerText);
-  return event.target.innerText;
+  const currentValue = event.target.value;
+  optionSelected = true;
+  console.log(currentValue);
+  return currentValue;
 };
 
-// Change content
+// Change Content
 function changeContent(event) {
   event.preventDefault();
-  
-  const hide = document.querySelector(".feedback");
-  const reveal = document.querySelector(".thanks");
 
-  hide.style.display = "none"
-  reveal.style.display = "block";
+  if (optionSelected) { 
+    const hide = document.querySelector(".feedback");
+    const reveal = document.querySelector(".thanks");
+    
+    hide.style.display = "none"
+    reveal.style.display = "block";
+    
+    const selectedValue = captureText(event);
+
+    feedbackMessage.textContent = `You selected ${selectedValue} out of 5`;
+    feedbackMessage.style.display = "block"
+  } else {
+    if (firstButtonClick) { // Checks if it is the first click on the button.
+      window.alert("Please choose an option")
+      firstButtonClick = false; // Sets the variable to false after displaying the message for the first time.
+    }
+  }
 }
 
-// Add Event Listener in Options
+// Add Event Listener in Each Option
 option.forEach(option => {
-  option.addEventListener("click", captureText);
+  option.addEventListener("change", captureText);
 });
 
-formBtn.addEventListener("click", changeContent);
+// Add Event Listener in Form
+form.addEventListener("submit", changeContent);
 
-// End
 
-// const selectedOption = document.querySelector('input[type="radio"]:checked');
+
+
+
 
 
