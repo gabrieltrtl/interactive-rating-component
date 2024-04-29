@@ -42,12 +42,12 @@ body {
 
 .container {
   background-image: radial-gradient(#232A34, #181E27);
-  padding: 24px 22px 32px 24px;
+  padding: 1.5rem 1.375rem 2rem 1.5rem;
   border-radius: 15px;
   max-width: 20.4375rem;
   @include device(desktop) {
-    max-width: 25.75rem;
-    padding: 48px 39px 32px 32px;
+    max-width: 412px;
+    padding: 3rem 2.4375rem 2rem 2rem;
   }
 }
 
@@ -55,15 +55,15 @@ body {
 .feedback__img-wrapper {
   display: inline-block;
   background-color: $color3;
-  padding: 13.33px;
+  padding: 0.8331rem;
   border-radius: 50%;
-  max-width: 40px;
+  max-width: 2.5rem;
   aspect-ratio: 1;
-  margin-bottom: 16px;
+  margin-bottom: 1rem;
   @include device(desktop) {
-    max-width: 48px;
-    padding: 16px;
-    margin-bottom: 30px;
+    max-width: 3rem;
+    padding: 1rem;
+    margin-bottom: 1.875rem;
   }
 }
 
@@ -73,16 +73,16 @@ fieldset {
 
 .feedback__title {
   font-size: map-get($fonts, "$medium");
-  margin-bottom: 17px;
+  margin-bottom: 1.0625rem;
   @include device(desktop) {
-    margin-bottom: 15px;
+    margin-bottom: 0.9375rem;
     font-size: map-get($fonts, "$large");
   }
 }
 
 .feedback__text {
   font-size: map-get($fonts, "$xsmall");
-  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
   line-height: 1.5;
   color: $color5;
   @include device(desktop) {
@@ -103,20 +103,20 @@ input[type="radio"]:checked + .radio__label {
 .form__radio-wrapper {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
 }
 
 .radio__label {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 9px 18px;
+  padding: 0.5625rem 1.125rem;
   background-color: $color3;
   color: $color4;
   font-weight: 700;
   font-size: map-get($fonts, "$xsmall");
   border-radius: 50%;
-  max-width: 42px;
+  max-width: 2.625rem;
   aspect-ratio: 1;
   cursor: pointer;
   transition: background-color 0.3s;  
@@ -131,7 +131,7 @@ input[type="radio"]:checked + .radio__label {
   display: block;
   background-color: $color6;
   color: $color1;
-  padding: 13.5px 113px;
+  padding: 0.8438rem 7.0625rem;
   border: none;
   border-radius: 22px;
   font-size: map-get($fonts, "$xsmall");
