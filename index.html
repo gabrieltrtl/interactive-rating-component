@@ -21,24 +21,22 @@
         Please let us know how we did with your support request. All feedback is appreciated
         to help us improve our offering!
       </p>
-      <ol class="feedback__list">
-       <li class="list__item">
-        <span>1</span>
-      </li>
-       <li class="list__item">
-        <span>2</span>
-      </li>
-       <li class="list__item">
-        <span>3</span>
-      </li>
-       <li class="list__item">
-        <span>4</span>
-       </li>
-       <li class="list__item">
-        <span>5</span>
-      </li>
-      </ol>
-      <button class="feedback__btn">Submit</button>
+      <form class="feedback__form">
+        <div class="form__radio-wrapper">
+          <input type="radio" name="feedback" id="one">
+          <label class="radio__label" for="one">1</label>
+          <input type="radio" name="feedback" id="two">
+          <label class="radio__label" for="two">2</label>
+          <input type="radio" name="feedback" id="three">
+          <label class="radio__label" for="three">3</label>
+          <input class="radio__label" type="radio" name="feedback" id="four">
+          <label class="radio__label" for="four">4</label>
+          <input type="radio" name="feedback" id="five">
+          <label class="radio__label" for="five">5</label>
+        </div>
+
+      <button type="submit" class="feedback__btn">Submit</button>
+      </form>
     </div>
     <div class="thanks">
       <img class="thanks__img" src="./images/illustration-thank-you.svg" alt="">
@@ -54,3 +52,6 @@
   <script src="./main.js"></script>
 </body>
 </html>
+
+
+
