@@ -1,23 +1,34 @@
+// Select Elements
 const option = document.querySelectorAll(".radio__label");
 const formBtn = document.querySelector(".feedback__btn")
 
-function captureText(event) {
-  return event.target.innerText;
-} 
 
-function changeContent() {
+// Capture chosen option
+function captureText(event) {
+  console.log(event.target.innerText);
+  return event.target.innerText;
+};
+
+// Change content
+function changeContent(event) {
+  event.preventDefault();
   
   const hide = document.querySelector(".feedback");
   const reveal = document.querySelector(".thanks");
 
-  hide.classList.add("hide");
-  reveal.classList.add("reveal");
+  hide.style.display = "none"
+  reveal.style.display = "block";
 }
 
+// Add Event Listener in Options
 option.forEach(option => {
   option.addEventListener("click", captureText);
 });
 
 formBtn.addEventListener("click", changeContent);
+
+// End
+
+// const selectedOption = document.querySelector('input[type="radio"]:checked');
 
 
